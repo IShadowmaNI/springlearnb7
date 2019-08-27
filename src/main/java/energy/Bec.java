@@ -10,8 +10,7 @@ public class Bec {
     private Energy energy;
 
     //Dependency Injection
-    @Autowired
-    public Bec(@Qualifier(value = "nuclear") Energy energy) {
+    public Bec(@Qualifier("newEnergy") Energy energy) {
         this.energy = energy;
     }
 
